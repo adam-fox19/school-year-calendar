@@ -1,0 +1,82 @@
+body {
+  text-align: center;
+  font-family: "Lato", "sans-serif";
+}
+.calendar__key--wrapper {
+  display: inline-block;
+  width: 220px;
+  margin-bottom: 20px;
+}
+#calendar__key--label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.calendar__key--row {
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+}
+.calendar__key--row div {
+  height: 100%;
+  width: 50%;
+  border: 1px solid white;
+  padding: 2px;
+}
+.calendar__key--row div:nth-of-type(1) {
+  background-color: #f2f2f2;
+}
+#calendar__key-type--term {
+  background-color: #e7eee2;
+}
+#calendar {
+  margin: 0 auto 25px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  #calendar {
+    width: 75%
+  }
+}
+
+.calendar__month--wrapper {
+  font-family: "Lato", "sans-serif";
+  font-weight: 600;
+  margin: 15px;
+  color: #4b4a4a;
+}
+.calendar__month--label {
+  color: #000000;
+}
+#calendar table {
+  border-spacing: 0;
+  font-weight: 500;
+  background-color: #e7eee2;
+}
+#calendar th, #calendar td {
+  width: 23px;
+  height: 23px;
+  border: #FFFFFF 1px solid;
+  padding: 4px 5px;
+}
+#calendar th {
+  background-color: #FFFFFF;
+}
+.calendar__type--empty {
+  background-color: #FFFFFF;
+}
+.calendar__type--weekend {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+.calendar__type--bank-holiday {
+  background-color: #c45d00;
+  color: #FFFFFF;
+}
+.calendar__type--school-holiday {
+  background-color: #135687;
+  color: #FFFFFF;
+}
